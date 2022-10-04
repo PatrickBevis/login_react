@@ -7,10 +7,12 @@ import LoggedScreen from './pages/LoggedScreen';
 import LoginScreen from './pages/LoginScreen';
 import AdminScreen from './pages/AdminScreen';
 import AccountScreen from './pages/AccountScreen';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
+    <Navbar/>
     <Routes>
     <Route path="/" element={<HomeScreen/>}/>
     <Route path="/login" element={<LoginScreen/>}/>

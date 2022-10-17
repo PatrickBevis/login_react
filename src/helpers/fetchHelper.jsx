@@ -2,10 +2,10 @@ import { getCookie } from "../helpers/cookieHelper";
 
 const doFetch = async (endpoint, options = {}) => {
   options.credentials = "include";
-  options.headers = {
-    Authorization: getCookie("blog"),
-  };
-  const url = "http://blog.api/" + endpoint;
+//   options.headers = {
+//     Authorization: getCookie("blog"),
+//   };
+  const url = "http://localhost:3000/blog-api/" + endpoint;
   let data = null,
     loading = true,
     error = null,
